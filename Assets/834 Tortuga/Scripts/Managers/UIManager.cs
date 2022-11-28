@@ -16,15 +16,15 @@ public class UIManager : MonoBehaviour
             game.SetActive(true);
         };
 
-        GameManager.OnGameFinsihed += (IsWin) =>
+        GameManager.OnGameFinsihed += () =>
         {
-            GameObject popupPrefab = IsWin ? Resources.Load<GameObject>("win") : Resources.Load<GameObject>("lose");
-            GameObject _popupGO = Instantiate(popupPrefab, GameObject.Find("screen").transform);
-            _popupGO.GetComponent<Popup>().SetData(() =>
-            {
-                GameManager.Instance.RestartGame();
-                Destroy(_popupGO);
-            });
+            //GameObject popupPrefab = IsWin ? Resources.Load<GameObject>("win") : Resources.Load<GameObject>("lose");
+            //GameObject _popupGO = Instantiate(popupPrefab, GameObject.Find("screen").transform);
+            //_popupGO.GetComponent<Popup>().SetData(() =>
+            //{
+            //    GameManager.Instance.RestartGame();
+            //    Destroy(_popupGO);
+            //});
         };
     }
 }
