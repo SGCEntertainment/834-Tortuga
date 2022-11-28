@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 49060723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1660870784}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OpenWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &49060723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,7 +421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &301187511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -460,7 +472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &347584082
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1719,7 +1731,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b8a0dd5f8b48b4fb3158984ca3ef13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
+  menu: {fileID: 1953703931}
+  scores: {fileID: 1028661399}
+  game: {fileID: 347584081}
+  scoreText: {fileID: 796430608}
 --- !u!1 &1710432193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +1848,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1805432839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1660870784}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OpenWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1805432839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2237,7 +2264,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1977940811}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1660870784}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OpenWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1977940811
 MonoBehaviour:
   m_ObjectHideFlags: 0
