@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     {
         if(coll.CompareTag("gold"))
         {
+            Destroy(coll.gameObject);
             return;
         }
 

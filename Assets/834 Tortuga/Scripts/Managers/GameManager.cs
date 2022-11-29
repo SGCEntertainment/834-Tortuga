@@ -76,11 +76,11 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Spawning()
     {
-        float delay = 1.5f;
+        float delay = 3.5f;
 
         while(true)
         {
-            Vector2 position = new Vector2(UnityEngine.Random.Range(-1.83f, 11.83f), 7.0f);
+            Vector2 position = new Vector2(UnityEngine.Random.Range(-1.83f, 1.83f), 7.0f);
             Quaternion rotation = Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0.0f, 360.0f));
 
             Instantiate(Obstacles[UnityEngine.Random.Range(0, Obstacles.Length)], position, rotation, ObstacleParent);
