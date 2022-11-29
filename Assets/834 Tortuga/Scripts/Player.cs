@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     Camera _camera;
+    public static Action OnCollidedGold { get; set; } = delegate { };
 
     private void Awake()
     {
