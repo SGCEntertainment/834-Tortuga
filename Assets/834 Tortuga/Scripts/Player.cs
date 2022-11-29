@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     {
         if(coll.CompareTag("gold"))
         {
+            OnCollidedGold?.Invoke();
             Destroy(coll.gameObject);
             return;
         }
