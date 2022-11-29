@@ -14,8 +14,13 @@ public class Player : MonoBehaviour
         transform.position = new Vector2(_camera.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D _)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
+        if(coll.CompareTag("gold"))
+        {
+            return;
+        }
+
         GameManager.Instance.GameOver();
         Destroy(gameObject);
     }
